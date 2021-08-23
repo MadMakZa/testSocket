@@ -11,7 +11,6 @@ import java.io.BufferedReader
 import java.io.InputStreamReader
 import java.io.PrintWriter
 import java.net.Socket
-import java.util.*
 
 class MainActivity : AppCompatActivity() {
     lateinit var textView: TextView
@@ -19,7 +18,6 @@ class MainActivity : AppCompatActivity() {
 
     private var active = false
     private var data = ""
-
     private val address = "5.61.43.154"
     private val port = 444
     private val message = "getjson"
@@ -45,6 +43,7 @@ class MainActivity : AppCompatActivity() {
                 button.text = "connect"
                 active = false
             }
+            setTextView()
         }
     }
 
